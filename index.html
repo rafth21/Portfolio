@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rafael Bicaldo Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .floating-btn {
+      position: fixed;
+      bottom: 100px;
+      left: 20px;
+      background-color: #173d3d;
+      color: greenyellow;
+      padding: 20px 25px;
+      border-radius: 100px;
+      text-align: center;
+      text-decoration: underline;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .floating-btn:hover {
+      transform: translateY(-5px);
+    }
+
+    .floating-btn:focus {
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+
+  <section class="hero d-flex align-items-center justify-content-center text-center text-light">
+    <div class="container">
+      <h1 class="display-4 animate-pop">Hi, I'm Rafael!</h1>
+      <p class="lead animate-fade">I Wanna Be A Web Developer</p>
+      <a href="#projects" class="btn btn-outline-light mt-3 animate-bounce">View My Work</a>
+    </div>
+    <div class="blob"></div>
+  </section>
+
+
+  <section class="about py-5" id="about">
+    <div class="container">
+      <h2 class="text-center mb-4 animate-fade">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="profile.jpg" class="img-fluid rounded-circle d-block animate-fade" alt="Rafth Avatar">
+        </div>
+        <div class="col-md-6 animate-slide">
+          <p>Hello! I'm Rafth, a future web developer. I may have a lazy attitude sometimes, but I dream of creating animated, interactive websites. I'm currently learning Bootstrap, CSS, JavaScript, and more to bring exciting ideas to life!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects py-5" id="projects">
+    <div class="container">
+      <h2 class="text-center mb-4 animate-fade">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4 animate-hover">
+          <div class="card project-card h-100 shadow-sm">
+            <img src="html1.jpg" class="card-img-top" alt="HTML Certificate">
+            <div class="card-body">
+              <h5 class="card-title">SOLO LEARN | HTML</h5>
+              <a href="https://www.sololearn.com/certificates/CC-L4GQQL4X" class="btn btn-primary" target="_blank" rel="noopener">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 animate-hover">
+          <div class="card project-card h-100 shadow-sm">
+            <img src="css1.jpg" class="card-img-top" alt="CSS Certificate">
+            <div class="card-body">
+              <h5 class="card-title">SOLO LEARN | CSS</h5>
+              <a href="https://www.sololearn.com/certificates/CC-M0C1YEYC" class="btn btn-primary" target="_blank" rel="noopener">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 animate-hover">
+          <div class="card project-card h-100 shadow-sm">
+            <img src="js1.jpg" class="card-img-top" alt="JavaScript Certificate">
+            <div class="card-body">
+              <h5 class="card-title">SOLO LEARN | JavaScript</h5>
+              <a href="https://www.sololearn.com/certificates/CC-U4HHMXKR" class="btn btn-primary" target="_blank" rel="noopener">View Certificate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Skills</h2>
+      <ul class="list-unstyled text-center">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript (ES6+)</li>
+        <li>React</li>
+        <li>Responsive Design</li>
+        <li>Git & GitHub</li>
+        <li>Node.js (Basic)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="hobbies" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 animate-fade">Hobbies</h2>
+      <ul class="list-unstyled text-center">
+        <li>🎮 Gaming</li>
+        <li>📚 Reading tech blogs and books</li>
+        <li>🌍 Traveling and exploring new cultures</li>
+        <li>🎨 Graphic design</li>
+        <li>🏋️‍♂️ Fitness and outdoor activities</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="experience py-5" id="experience">
+    <div class="container">
+      <h2 class="text-center mb-4 animate-fade">Work Experience</h2>
+      <ul class="list-unstyled">
+        <li>
+          <h5>Welder</h5>
+          <p>I worked at my uncle’s shop as a welder after stopping school in 2017 at age 13.</p>
+        </li>
+        <li>
+          <h5>Waiter / Crew at Jollibee</h5>
+          <p>I worked part-time at Jollibee during my Grade 11 studies. It was tough, but I pushed through.</p>
+        </li>
+        <li>
+          <h5>Bagger at Supermarket</h5>
+          <p>After senior high school, I worked at a supermarket for 6 months due to a contract job.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact py-5 text-white text-center bg-dark" id="contact">
+    <div class="container">
+      <h2 class="mb-4 animate-fade">Enjoy Visiting</h2>
+      <p class="mb-3 animate-slide">Feel free to contact me through my social handles!</p>
+      <div class="d-flex justify-content-center gap-4 animate-bounce">
+        <a href="https://www.facebook.com/rafthbcldo" class="text-white fs-3"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/rafthbcldo" class="text-white fs-3"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/rafth21" class="text-white fs-3"><i class="fab fa-github"></i></a>
+        <a href="mailto:rafthbicaldo@gmail.com" class="text-white fs-3"><i class="fab fa-google"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-3 bg-dark text-center text-white">
+    <p class="m-0">&copy; 2025 Rafth’s Portfolio. Made with ❤️.</p>
+  </footer>
+
+  <a href="https://www.linkedin.com/in/rafael-bicaldo-547679364" class="floating-btn">Hire Me</a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

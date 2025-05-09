@@ -1,0 +1,172 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  
+  .hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, darkcyan, olive);
+    position: relative;
+    z-index: 1;
+  }
+  .blob {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    background: rgba(2808, 31, 61, .5);
+    border-radius: 50%;
+    top: -50px;
+    right: -50px;
+    animation: float 6s ease-in-out infinite;
+    z-index: 0;
+  }
+  
+  
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+  }
+  @keyframes pop {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  @keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes slide {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .animate-pop {
+    animation: pop 0.8s ease forwards;
+
+  }
+
+  .animate-fade {
+    animation: fade 1.2s ease forwards;
+  }
+  .animate-slide {
+    animation: slide 1.2s ease forwards;
+  }
+  .animate-bounce {
+    animation: bounce 2s infinite;
+  }
+  .animate-hover:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  
+  .wave {
+    animation: wave 2s infinite;
+    display: inline-block;
+    transform-origin: 70% 70%;
+  }
+  @keyframes wave {
+    0%, 60%, 100% { transform: rotate(0); }
+    30% { transform: rotate(20deg); }
+  }
+  
+  .contact {
+    background: linear-gradient(135deg, #062, #3df);
+  }
+  
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background-color: #121212; 
+    color: #375; 
+}
+
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a1a, #0b214e); 
+    position: relative;
+    z-index: 1;
+}
+
+.blob {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgba(108, 61, 61, 0.1);
+    border-radius: 50%;
+    top: -100px;
+    right: -100px;
+    animation: float 6s ease-in-out infinite;
+    z-index: 0;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes pop {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slide {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.animate-pop {
+    animation: pop 0.8s ease forwards;
+}
+
+.animate-fade {
+    animation: fade 1.2s ease forwards;
+}
+
+.animate-slide {
+    animation: slide 1.2s ease forwards;
+}
+
+.animate-bounce {
+    animation: bounce 2s infinite;
+}
+
+.animate-hover:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.wave {
+    animation: wave 2s infinite;
+    display: inline-block;
+    transform-origin: 70% 70%;
+}
+    
+@keyframes wave {
+    0%, 60%, 100% { transform: rotate(0); }
+    30% { transform: rotate(20deg); }
+}
+
+.contact {
+   background: linear-gradient(135deg, #020322, #3d10af);
+}
+
+h1, h2, h3, p, a {
+   color: blueviolet;
+}
